@@ -1,5 +1,4 @@
 ﻿/// <reference path="../jquery-1.10.2.js" />
-
 var root = location.protocol + "//" + location.host;
 
 var url = root + "/UltimusSercopPortal/Home/Initiate?userLoged=true"
