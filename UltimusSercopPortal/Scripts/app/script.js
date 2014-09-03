@@ -6,7 +6,7 @@ var url = root + "/UltimusSercopPortal/Home/Initiate?userLoged=true"
 $('#myModal').modal('show')
 
 $("#btnLogon").click(function () {
-    location.href = "/ULAPW/Home/Index";
+    location.href = "/UltimusSercopPortal/Home/Index";
 });
 
 $("#btnClose").click(function () {
