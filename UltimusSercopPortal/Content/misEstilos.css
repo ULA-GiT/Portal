@@ -1,0 +1,129 @@
+﻿body { 
+     padding-top: 70px;
+
+}
+
+footer {  
+    padding-left: 15px;  
+    padding-right: 15px;
+}
+/* * Off Canvas * -------------------------------------------------- */
+@media screen and (max-width: 768px) {
+    .row-offcanvas {
+        position: relative;
+        -moz-transition: all 0.4s ease-out;
+        -o-transition: all 0.4s ease-out;
+        -webkit-transition: all 0.4s ease-out;
+        transition: all 0.4s ease-out;
+    }  
+    
+    .row-offcanvas-left  #sidebarLeft {    
+        left: -40%;  
+    }  
+    
+    .row-offcanvas-left.active {    
+        left: 40%;  
+    }   
+    
+    .row-offcanvas-right   #sidebarRight {    
+        right: -40%;  
+    }  
+    
+    .row-offcanvas-right.active {    
+        right: 40%;  
+    }  
+    
+    .sidebar-offcanvas {    
+        position: absolute;    
+        top: 0;    
+        width: 40%;    
+        margin-left: 10px;  
+    }
+}
+
+.logo {
+    width: 141px;
+}
+
+.navbar-inverse {
+   color:white!important;
+   background-color:#444444;
+}
+
+.divider {
+    color: black!important;
+}
+
+.jumbotron {
+    background-color:#444444;
+    padding-top:1px!important;
+    padding-bottom:1px!important;
+    border-radius:20px;
+    font-size:12px;
+    text-align:center;
+}
+.well {
+    background-color: #444444;
+    color:white;
+    border-radius:20px;
+}
+a {
+    color: white;
+}
+
+    a:hover {
+        color: skyblue!important;
+    }
+
+.powered {
+    text-align:center;
+    border-radius:20px;
+    height:120px;
+    background-color:white;
+    color:black;
+    font-size:11px;
+}
+
+.nombreVista {
+   background-color:lightgray;
+   border-radius:20px;
+   height:40px;
+}
+
+table {
+   /*border:1px solid black;*/
+   width:100%;
+}
+
+td, th {
+    padding-left:20px;
+}
+
+/*@media (max-width: 400px)  {
+    #grafo {
+        width: 50px!important;
+        margin-left:0;
+    }
+}*/
+
+@media screen and (max-width: 400px) {
+    @-ms-viewport {
+        width: 320px;
+    }
+
+@-moz-viewport {
+    width: 320px;
+  }
+
+@-webkit-viewport {
+    width: 320px;
+  }
+
+@viewport {
+    width: 320px;
+  }
+}
+
+.fino {
+    height: 20px!important;
+}

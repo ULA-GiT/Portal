@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UltimusSercopPortal", "UltimusSercopPortal\UltimusSercopPortal.csproj", "{478B67CF-980B-4480-9F5D-FA6911416018}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InitiateAPI", "InitiateAPI\InitiateAPI.csproj", "{1BFCDCB3-205F-41B2-B8F3-CFFFA2CF304C}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://186.73.132.125/tfs/portalultimusula
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = ULAPW\\ULAPW.csproj
+		SccProjectName1 = ULAPW
+		SccLocalPath1 = ULAPW
+		SccProjectUniqueName2 = InitiateAPI\\InitiateAPI.csproj
+		SccProjectName2 = InitiateAPI
+		SccLocalPath2 = InitiateAPI
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{478B67CF-980B-4480-9F5D-FA6911416018}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{478B67CF-980B-4480-9F5D-FA6911416018}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{478B67CF-980B-4480-9F5D-FA6911416018}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{478B67CF-980B-4480-9F5D-FA6911416018}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1BFCDCB3-205F-41B2-B8F3-CFFFA2CF304C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BFCDCB3-205F-41B2-B8F3-CFFFA2CF304C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BFCDCB3-205F-41B2-B8F3-CFFFA2CF304C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BFCDCB3-205F-41B2-B8F3-CFFFA2CF304C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
