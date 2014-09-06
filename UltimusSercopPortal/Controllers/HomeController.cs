@@ -10,8 +10,7 @@ namespace ULAPW.Controllers
     public class HomeController : Controller
     {
         public ActionResult Index(string BLUP, string Aplicacion)
-        { 
-            
+        {             
             if (BLUP != null && Aplicacion =="MA")
             {
                 var flag = Convert.ToBoolean(ConfigurationManager.AppSettings["FlagUltimusLogin"]);
@@ -32,29 +31,6 @@ namespace ULAPW.Controllers
                 return View("Login");
             }
         }
-
-
-        //public ActionResult Index(string user, string token, string ruc = "")
-        //{
-        //    if (user != null && token != null)
-        //    {
-        //        var flag = Convert.ToBoolean(ConfigurationManager.AppSettings["FlagUltimusLogin"]);
-
-        //        if (IsTokenValido(token))
-        //            return View("Initiate");
-        //        else
-        //        {
-        //            if (!flag)
-        //                return Redirect("http://192.168.9.212/easywebacceso/EasyLogin/wfLogin.aspx");
-        //            else
-        //                return RedirectToAction("Login");
-        //        }
-        //    }
-        //    else
-        //    {
-        //        return View("Login");
-        //    }
-        //}
 
         public ActionResult Login()
         {
@@ -80,14 +56,38 @@ namespace ULAPW.Controllers
             {
                 //userLoged = true;
                 ViewBag.Resultado = resp;
+                ViewBag.Ip = ip;
                 return true;
             }
             //return true;
         }
 
-        public ActionResult Redirige()
+        //public ActionResult Redirige()
+        //{
+        //    return View();
+        //}
+
+        public ActionResult Inbox(string BLUP, string Aplicacion)
         {
-            return View();
+            if (BLUP != null && Aplicacion == "MA")
+            {
+                var flag = Convert.ToBoolean(ConfigurationManager.AppSettings["FlagUltimusLogin"]);
+                var ip = Request.UserHostAddress;
+
+                if (IsTokenValido(BLUP, ip))
+                    return View("Inbox");
+                else
+                {
+                    if (!flag)
+                        return Redirect("http://192.168.9.212/easywebacceso/EasyLogin/wfLogin.aspx");
+                    else
+                        return RedirectToAction("Login");
+                }
+            }
+            else
+            {
+                return View("Login");
+            }
         }
     }
 }

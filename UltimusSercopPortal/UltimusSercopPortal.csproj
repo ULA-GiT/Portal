@@ -278,6 +278,7 @@
     <Content Include="Views\Home\Redirige.cshtml" />
     <None Include="Service References\ServiceEasyLogin\DSLogin.xsd" />
     <None Include="Service References\ServiceEasyLogin\WSEasyLogin.wsdl" />
+    <Content Include="Views\Home\Inbox.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

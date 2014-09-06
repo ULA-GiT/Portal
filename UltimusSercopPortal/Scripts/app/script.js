@@ -43,7 +43,7 @@ $(document).ready(function () {
               var miObjeto = JSON.parse(data)
               var tabla = $("#tabla");
               miObjeto.forEach(function (v, i) {
-                  var tr = $("<tr></tr>");
+                  var tr = $('<tr class="openWin"></tr>');
                   tabla.append(tr);
 
                   var td = $("<td>" + v.NombreProceso + "</td>");
@@ -55,6 +55,18 @@ $(document).ready(function () {
                   var td = $("<td>" + v.NombreTarea + "</td>");
                   tr.append(td);
 
+                  var td = $("<td class='urlOpen'>" +v.Url.replace('.', 'http://192.168.110.10/UltWeb') + "</td>");
+                  tr.append(td);
               });
           });
 });
+
+    $('#tabla').on('click', 'tbody tr.openWin' , function (e) {
+       // alert(this.cells[3].innerText);
+        window.open($(this).find('td:last').text(),"newWindow", "height="+ screen.height + ", width =" + screen.width);
+    });
+
+
+$("#inbox").attr("href", $("#blup").val());
+$("#initiate").attr("href", $("#blupInitiate").val());
+

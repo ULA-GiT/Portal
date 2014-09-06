@@ -1,20 +1,22 @@
-﻿@{
-    ViewBag.Title = "Initiate";
+﻿
+@{
+    ViewBag.Title = "Inbox";
     var entero = Request.Url.PathAndQuery;
-    var path =  entero.Substring(entero.IndexOf('?') + 6);
-    ViewBag.BLUP =path.Substring(0,path.Length-14 );
+    var path = entero.Substring(entero.IndexOf('?') + 6);
+    ViewBag.BLUP = path.Substring(0, path.Length - 14);
 }
-
-@MiHelper.DevuelveDatosUsuario(ViewBag.Resultado)
 <input type="hidden" id="blupInitiate" value="/UltimusSercopULAPortal/Home/Index?BLUP=@ViewBag.BLUP&Aplicacion=MA" />
 <input type="hidden" id="blup" value="/UltimusSercopULAPortal/Home/inbox?BLUP=@ViewBag.BLUP&Aplicacion=MA" />
 <div class="row">
-    <table class="table table-responsive" id="tabla">
+    <table class="table table-responsive" id="tablaInbox">
         <tr>
             <th>Nombre del Proceso</th>
-            <th>Versión</th>
             <th>Nombre de Tarea</th>
-            <th class="urlOpen">Url</th>
+            <th>Número de Proceso</th>
+            <th>Resumen del Incidente</th>
+            <th>Estado de la Tarea</th>
+            <th>Prioridad del Incidente</th>
         </tr>
     </table>
-</div><!--/row-->
+</div>
+

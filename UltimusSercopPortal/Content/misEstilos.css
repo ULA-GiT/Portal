@@ -127,3 +127,15 @@ td, th {
 .fino {
     height: 20px!important;
 }
+
+#tabla tr:hover  {
+   background-color: silver;
+}
+
+#tabla tr:first-child {
+    background-color: #ffff99;
+}
+
+.urlOpen {
+  display:none;
+}
