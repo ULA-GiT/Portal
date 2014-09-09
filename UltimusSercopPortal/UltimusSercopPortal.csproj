@@ -170,6 +170,7 @@
     <Content Include="images\logo.png" />
     <Content Include="images\UltimusLogoVert.png" />
     <Content Include="Scripts\app\script.js" />
+    <Content Include="Scripts\app\scriptInbox.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -182,6 +183,10 @@
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
+    <Content Include="Scripts\sugar-es6-patch.js" />
+    <Content Include="Scripts\sugar-es6-patch.min.js" />
+    <Content Include="Scripts\sugar.js" />
+    <Content Include="Scripts\sugar.min.js" />
     <Content Include="Scripts\_references.js" />
     <Content Include="Service References\ServiceEasyLogin\ULAPW.ServiceEasyLogin.AuthenticateByAliasResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>

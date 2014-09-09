@@ -132,7 +132,7 @@ td, th {
    background-color: silver;
 }
 
-#tabla tr:first-child {
+#tabla, #tablaInbox tr:first-child {
     background-color: #ffff99;
 }
 

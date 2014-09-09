@@ -5,6 +5,8 @@
     var path = entero.Substring(entero.IndexOf('?') + 6);
     ViewBag.BLUP = path.Substring(0, path.Length - 14);
 }
+
+@MiHelper.DevuelveDatosUsuario(ViewBag.Resultado)
 <input type="hidden" id="blupInitiate" value="/UltimusSercopULAPortal/Home/Index?BLUP=@ViewBag.BLUP&Aplicacion=MA" />
 <input type="hidden" id="blup" value="/UltimusSercopULAPortal/Home/inbox?BLUP=@ViewBag.BLUP&Aplicacion=MA" />
 <div class="row">
@@ -12,11 +14,16 @@
         <tr>
             <th>Nombre del Proceso</th>
             <th>Nombre de Tarea</th>
-            <th>Número de Proceso</th>
-            <th>Resumen del Incidente</th>
+            <th>Código del Proceso</th>
+            <th>Fecha Vencimiento</th>
             <th>Estado de la Tarea</th>
             <th>Prioridad del Incidente</th>
         </tr>
     </table>
 </div>
+<script src="~/Scripts/jquery-1.10.2.js"></script>
+<script src="~/Scripts/app/scriptInbox.js"></script>
+@*
+    Convenio Marco   Generar Solicitud                               	090216a18eb7e3a3c29730f48d0e89                                  	soce.int/alfresco                                                                                                                                                                                                                                               	3	Convenio Marco	Pr	Co	XX	1	2014	Esto es una prueba	NULL	N11134b	2014-10-30 00:00:00.000
 
+*@
