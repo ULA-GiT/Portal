@@ -1,4 +1,7 @@
-﻿$(document).ready(function () {
+﻿/// <reference path="../moment-with-locales.min.js" />
+
+
+$(document).ready(function () {
     var domain = "soce.int";
     var usr = "alfresco";
     var codigo ="";
@@ -19,7 +22,8 @@
                   td = $("<td>" + codigo + "</td>");
                   tr.append(td);
 
-                  td = $("<td>" +v.FechaProgramada + "</td>");
+                  moment.locale('es')
+                  td = $("<td>" + moment(v.FechaProgramada).format('L') + "</td>");
                   tr.append(td);
               });
           });
