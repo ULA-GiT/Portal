@@ -128,11 +128,11 @@ td, th {
     height: 20px!important;
 }
 
-#tabla tr:hover  {
+#tabla tr:hover,  #tablaInbox tr:hover, #tablaCompleted tr:hover  {
    background-color: silver;
 }
 
-#tabla, #tablaInbox tr:first-child {
+#tabla tr:first-child, #tablaInbox tr:first-child, #tablaCompleted tr:first-child {
     background-color: #ffff99;
 }
 

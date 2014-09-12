@@ -89,5 +89,29 @@ namespace ULAPW.Controllers
                 return View("Login");
             }
         }
+
+        public ActionResult Completed(string BLUP, string Aplicacion)
+        {
+            if (BLUP != null && Aplicacion == "MA")
+            {
+                var flag = Convert.ToBoolean(ConfigurationManager.AppSettings["FlagUltimusLogin"]);
+                var ip = Request.UserHostAddress;
+
+                if (IsTokenValido(BLUP, ip))
+                    return View("Completed");
+                else
+                {
+                    if (!flag)
+                        return Redirect("http://192.168.9.212/easywebacceso/EasyLogin/wfLogin.aspx");
+                    else
+                        return RedirectToAction("Login");
+                }
+            }
+            else
+            {
+                return View("Login");
+            }
+        }
+
     }
 }

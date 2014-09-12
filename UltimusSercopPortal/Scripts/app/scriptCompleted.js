@@ -1,13 +1,13 @@
 ﻿/// <reference path="../moment-with-locales.min.js" />
 
- var domain = "soce.int";
- var usr = "alfresco";
- var codigo ="";
+var domain = "soce.int";
+var usr = "alfresco";
+var codigo = "";
 $(document).ready(function () {
-   
-    $.getJSON("http://192.168.110.10/InboxApi/api/Inbox/" + domain + "/" + usr)
+
+    $.getJSON("http://192.168.110.10/InitiateApi/api/Completed/" + domain + "/" + usr)
           .done(function (data) {
-              var tabla = $("#tablaInbox");
+              var tabla = $("#tablaCompleted");
               data.forEach(function (v, i) {
                   var tr = $('<tr class="openWin"></tr>');
                   tabla.append(tr);
@@ -38,20 +38,17 @@ $(document).ready(function () {
           });
 });
 
-$('#tablaInbox').on('click', 'tbody tr.openWin', function (e) {
+$('#tablaCompleted').on('click', 'tbody tr.openWin', function (e) {
     var id = $(this).find('td:last').text();
     var url = "http://192.168.110.10/Ultimus.Sercop.Compartidos/FrmUltimus.aspx?UserID=" + domain + "/" + usr + "&TaskID=" + id;
     window.open(url, "newWindow", "height=" + screen.height + ", width =" + screen.width);
 });
 
-function devuelveEstadoTarea(st)
-{
-    if(st===1)
-    {
+function devuelveEstadoTarea(st) {
+    if (st === 1) {
         return "Activo";
     }
-    else if (st === 3)
-    {
+    else if (st === 3) {
         return "Completado";
     }
 }

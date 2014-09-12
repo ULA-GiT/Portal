@@ -1,5 +1,5 @@
 ﻿@{
-    ViewBag.Title = "Initiate";
+    ViewBag.Title = "Completed";
     var entero = Request.Url.PathAndQuery;
     var path = entero.Substring(entero.IndexOf('?') + 6);
     ViewBag.BLUP = path.Substring(0, path.Length - 14);
@@ -10,12 +10,17 @@
 <input type="hidden" id="blup" value="/UltimusSercopULAPortal/Home/inbox?BLUP=@ViewBag.BLUP&Aplicacion=MA" />
 <input type="hidden" id="blupCompleted" value="/UltimusSercopULAPortal/Home/completed?BLUP=@ViewBag.BLUP&Aplicacion=MA" />
 <div class="row">
-    <table class="table table-responsive" id="tabla">
+    <table class="table table-responsive" id="tablaCompleted">
         <tr>
             <th>Nombre del Proceso</th>
-            <th>Versión</th>
             <th>Nombre de Tarea</th>
-            <th class="urlOpen">Url</th>
+            <th>Código del Proceso</th>
+            <th>Fecha Vencimiento</th>
+            <th>Estado de la Tarea</th>
+            <th>Descripción del Proceso</th>
         </tr>
     </table>
-</div><!--/row-->
+</div>
+<script src="~/Scripts/jquery-1.10.2.js"></script>
+<script src="~/Scripts/moment-with-locales.min.js"></script>
+<script src="~/Scripts/app/scriptCompleted.js"></script>

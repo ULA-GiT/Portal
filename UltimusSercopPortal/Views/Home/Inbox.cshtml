@@ -1,5 +1,4 @@
-﻿
-@{
+﻿@{
     ViewBag.Title = "Inbox";
     var entero = Request.Url.PathAndQuery;
     var path = entero.Substring(entero.IndexOf('?') + 6);
@@ -9,6 +8,7 @@
 @MiHelper.DevuelveDatosUsuario(ViewBag.Resultado)
 <input type="hidden" id="blupInitiate" value="/UltimusSercopULAPortal/Home/Index?BLUP=@ViewBag.BLUP&Aplicacion=MA" />
 <input type="hidden" id="blup" value="/UltimusSercopULAPortal/Home/inbox?BLUP=@ViewBag.BLUP&Aplicacion=MA" />
+<input type="hidden" id="blupCompleted" value="/UltimusSercopULAPortal/Home/completed?BLUP=@ViewBag.BLUP&Aplicacion=MA" />
 <div class="row">
     <table class="table table-responsive" id="tablaInbox">
         <tr>
@@ -17,14 +17,10 @@
             <th>Código del Proceso</th>
             <th>Fecha Vencimiento</th>
             <th>Estado de la Tarea</th>
-            <th>Prioridad del Incidente</th>
+            <th>Descripción del Proceso</th>
         </tr>
     </table>
 </div>
 <script src="~/Scripts/jquery-1.10.2.js"></script>
 <script src="~/Scripts/moment-with-locales.min.js"></script>
 <script src="~/Scripts/app/scriptInbox.js"></script>
-@*
-    Convenio Marco   Generar Solicitud                               	090216a18eb7e3a3c29730f48d0e89                                  	soce.int/alfresco                                                                                                                                                                                                                                               	3	Convenio Marco	Pr	Co	XX	1	2014	Esto es una prueba	NULL	N11134b	2014-10-30 00:00:00.000
-
-*@

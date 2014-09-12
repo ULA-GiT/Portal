@@ -170,6 +170,7 @@
     <Content Include="images\logo.png" />
     <Content Include="images\UltimusLogoVert.png" />
     <Content Include="Scripts\app\script.js" />
+    <Content Include="Scripts\app\scriptCompleted.js" />
     <Content Include="Scripts\app\scriptInbox.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -284,6 +285,7 @@
     <None Include="Service References\ServiceEasyLogin\DSLogin.xsd" />
     <None Include="Service References\ServiceEasyLogin\WSEasyLogin.wsdl" />
     <Content Include="Views\Home\Inbox.cshtml" />
+    <Content Include="Views\Home\Completed.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

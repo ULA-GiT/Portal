@@ -69,4 +69,6 @@ $(document).ready(function () {
 
 $("#inbox").attr("href", $("#blup").val());
 $("#initiate").attr("href", $("#blupInitiate").val());
+$("#completed").attr("href", $("#blupCompleted").val());
+
 
